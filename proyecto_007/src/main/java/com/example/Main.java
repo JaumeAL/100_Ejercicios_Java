@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int cantidad = 0;
+        int total = 0;
         double nota = 0, suma = 0, media = 0;
 
         System.out.println("Introduce una nota: ");
@@ -16,15 +16,15 @@ public class Main {
 
         while (nota > 0) {
             suma = suma + nota;
-            cantidad++;
+            total++;
             System.out.println("Introduce otra nota: \n(o num negativo para salir): ");
             nota = sc.nextDouble();
         }
-        if (cantidad == 0) {
+        if (total == 0) {
             System.out.println("No se puede hacer la media");
         } else {
-            media = suma / cantidad;
-            System.out.println("La media de los " + cantidad + " exámenes es: " + media);
+            media = suma / total;
+            System.out.println("La media de los " + total + " exámenes es: " + media);
         }
 
     }

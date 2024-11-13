@@ -28,7 +28,7 @@ public class Main {
             totalKilo = totalKilo + kilos; // cantidad de kilos
             // condiciones
             if (importeFactura >= 1000) {
-                facturasMil++;// cantidad de facturas emitedas amyores a 1000
+                facturasMil++;// Cantidad de facturas emitedas amyores a 1000
             }
         }
         System.out.println("Info de ventas: ");

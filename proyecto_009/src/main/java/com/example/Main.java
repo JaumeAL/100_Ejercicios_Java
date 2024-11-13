@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("---Introduce 10 números---");
         for (int i = 0; i < 10; i++) {
-            System.out.print("Numero :");
+            System.out.print("Número :");
             numero = sc.nextInt();
             if (numero > 0) {
                 cantidadPositivos++;

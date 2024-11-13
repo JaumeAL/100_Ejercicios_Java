@@ -1,5 +1,5 @@
 // Programa pide 10 números enteros
-//Dará la media de los positivos y de negativos.
+//Dará la media de los positivos y de negativos
 
 package com.example;
 
@@ -18,17 +18,17 @@ public class Main {
             numero = sc.nextInt();
             if (numero > 0) {
                 cantidadPositivos++;
-                sumaPositivos = sumaPositivos+numero;
+                sumaPositivos = sumaPositivos + numero;
             } else if (numero < 0) {
                 cantidadNegativos++;
-                sumaNegativos = sumaNegativos+numero;
-            } 
+                sumaNegativos = sumaNegativos + numero;
+            }
         }
-        mediaPositivos=sumaPositivos/cantidadPositivos;
-        mediaNegativos=sumaNegativos/cantidadNegativos;
+        mediaPositivos = sumaPositivos / cantidadPositivos;
+        mediaNegativos = sumaNegativos / cantidadNegativos;
 
-        System.out.println("La media de los números positivos es = "+ mediaPositivos);
-        System.out.println("La media de los números negativos es = "+ mediaNegativos);
+        System.out.println("La media de los números positivos es = " + mediaPositivos);
+        System.out.println("La media de los números negativos es = " + mediaNegativos);
 
     }
 }

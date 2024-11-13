@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        boolean continuar = true; 
-        while (continuar) {
+        boolean seguir = true;
+        while (seguir) {
             System.out.println("Dame un número del 1 al 7");
             int dia = sc.nextInt();
-            
+
             switch (dia) {
                 case 1:
                     System.out.println("Lunes");
@@ -39,7 +39,6 @@ public class main {
                     break;
             }
 
-            
             if (dia >= 1 && dia <= 7) {
                 if (dia < 6) {
                     System.out.println("Entre semana");
@@ -48,12 +47,11 @@ public class main {
                 }
             }
 
-           
-            System.out.println("¿Quieres continuar? (s/n)");
-            char respuesta = sc.next().charAt(0); 
-            
+            System.out.println("¿Quieres seguir? (s/n)");
+            char respuesta = sc.next().charAt(0);
+
             if (respuesta != 's') {
-                continuar = false; 
+                seguir = false;
             }
         }
 
